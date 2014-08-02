@@ -1,4 +1,4 @@
 parade
 ======
 
-Main Dashboard
+Main Dashboard for Parade
