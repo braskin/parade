@@ -57,7 +57,7 @@
                                 sessionId: currentStamp,
                                 url: window.location.href,
                                 currentDate: getCurrentDate(),
-                                timestamp: currentStamp,
+                                timestamp: getTimestamp(),
                                 name: $input.attr('name'),
                                 id: $input.attr('id'),
                                 classStr: $input.attr('class'),
