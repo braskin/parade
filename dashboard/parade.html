@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style>
+        .iframe-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        #my-frame {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="iframe-wrapper"><iframe id="my-frame" src="free_flash_template/site/index-1.html" frameborder="0"></iframe></div>
+
+<script src="jquery-2.1.1.min.js"></script>
+<script src="jquery.ba-postmessage.js"></script>
+<script>
+    (function($) {
+
+        window.Parade = {
+
+            init: function() {
+
+                var that = this;
+
+                that.receiveMessage();
+            },
+
+            postMessage: function(options) {
+
+                var options = $.extend({message: 'Hello World', destenation: '*'}, options),
+                    iframe  = $('#my-frame').get(0);
+
+                $.postMessage(
+                    options.message,
+                    options.destatiom,
+                    iframe.contentWindow
+                );
+            },
+
+            receiveMessage: function() {
+
+                $.receiveMessage(
+                    function(e){
+                        console.log('data parent', decodeURIComponent(e.data) );
+                    },
+                    function(param) {
+                        return true;
+                    }
+
+                );
+            }
+        }
+
+        $(document).ready(function() {
+            Parade.init();
+        });
+
+    })($);
+
+
+
+</script>
+</body>
+</html>
