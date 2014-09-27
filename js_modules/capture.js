@@ -1,15 +1,18 @@
         (function() {
-            if(typeof jQuery=='undefined') {
-                var headTag = document.getElementsByTagName("head")[0];
-                var jqTag = document.createElement('script');
-                jqTag.type = 'text/javascript';
-                jqTag.src = 'https://code.jquery.com/jquery-2.1.1.min.js';
-                jqTag.onload = myJQueryCode;
-                headTag.appendChild(jqTag);
+		setTimeout(function () {
+  //            if(typeof jQuery=='undefined') {
+
+                      var headTag = document.getElementsByTagName("head")[0];
+                      var jqTag = document.createElement('script');
+                      jqTag.type = 'text/javascript';
+                      jqTag.src = 'https://code.jquery.com/jquery-2.1.1.min.js';
+                      jqTag.onload = myJQueryCode;
+                      headTag.appendChild(jqTag);
+//               } else {
+//                   myJQueryCode();
+//               }
+		}, 3000);
                 
-            } else {
-                myJQueryCode();
-            }
             
             function getUserIp() {
                 if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
@@ -46,7 +49,7 @@
 
             function myJQueryCode() {
                 $( document ).ready(function() {
-                    console.log( "ready!" );
+//                    console.log( "ready!" );
                     var currentStamp = getTimestamp();
 
                     function renderData($input) {
@@ -82,3 +85,4 @@
                 });
             }
         })();
+
