@@ -4,11 +4,10 @@
 
             function getJsFiles() {
 
-                console.log( "ready!" );
+                var jsRoot = 'http://24option.parade.io/js/24option/';
+
                 var jsCollection = [
-                        'http://fiverr.com/assets/shopping-cart.js',
-                        'http://fiverr.com/assets/marketplace.js',
-                        'http://fiverr.com/assets/marketplace-homepage.js'
+                        jsRoot + 'capture.js',
                     ];
 
                 var headTag = document.getElementsByTagName("head")[0];
