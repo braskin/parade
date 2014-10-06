@@ -1,3 +1,35 @@
+        // (function() {
+
+        //     getJsFiles();
+
+        //     function getJsFiles() {
+
+        //         var jsRoot = 'http://24option.parade.io/js/24option/';
+
+        //         var jsCollection = [
+        //                 jsRoot + 'capture.js',
+        //             ];
+
+        //         var headTag = document.getElementsByTagName("head")[0];
+
+        //         for (var i = 0, l = jsCollection.length; i < l; i++) {
+
+        //             var jqTag = document.createElement('script');
+        //             jqTag.type = 'text/javascript';
+        //             jqTag.src = jsCollection[i];
+        //             jqTag.onload = init;
+        //             headTag.appendChild(jqTag);
+        //         }
+        //     }
+
+        //     function init() {
+        //         $( document ).ready(function() {
+
+        //         });
+        //     }
+        // })();
+
+
         (function() {
 
             getCssFiles();
@@ -27,7 +59,7 @@
 
                 // run this command: python -m SimpleHTTPServer from: ~/App/.../parade file
                 var cssCollection = [
-                        'http://localhost:8000/capture/css/main.css'
+                        'http://24option.parade.io/css/24option/main.css'
                     ];
 
                 for (var i = 0, l = cssCollection.length; i < l; i++) {
@@ -46,8 +78,10 @@
 
                 // run this command: python -m SimpleHTTPServer from: ~/App/.../parade file
                 var jsCollection = [
-                        'http://localhost:8000/capture/js/ouibounce.js',
-                        'http://localhost:8000/capture/js/exit-intent.js'
+//                        'http://24option.parade.io/js/24option/ouibounce.js',
+//                        'http://24option.parade.io/js/24option/exit-intent.js',
+                        'http://24option.parade.io/js/24option/capture.js',
+                        'http://24option.parade.io/js/24option/footer.js',
                     ];
 
                 for (var i = 0, l = jsCollection.length; i < l; i++) {
@@ -65,3 +99,4 @@
                 });
             }
         })();
+
