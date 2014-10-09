@@ -13,26 +13,24 @@
 
             function init() {
                 $( document ).ready(function() {
-                    console.log( "ready!" );
+                    console.log( "footer ready!" );
 
-                    var footerBar = $('<div class="footer-bar">'
-                            +'<a href="http://www.google.com" class="close-btn">new-link</a>'
-                        +'</div>').css({
-                        position: 'fixed',
-                        'z-index': 1, 
-                        right: 0,
-                        bottom: 0,
-                        left: 0,
-                        height: '50px',
-                        margin: '0 -2px',
-                        opacity: 0.9,
-                        'background-color': '#000',
-                        'text-align': 'center',
-                        'padding-top': '16px'
-                    });
+                    var template = [
+                        '<section class="parade-footer-promotion">',
+                            '<a href="#" class="parade-btn-close"></a>',
+                            '<div class="parade-content">',
+                                '<span class="parade-message">Check out these other great offer!</span>',
+                                '<ul>',
+                                    '<li><a href="#"><img height="80px" src="http://localhost:8000/capture/images/offer_01.jpg"></a></li>',
+                                    '<li><a href="#"><img height="80px" src="http://localhost:8000/capture/images/offer_02.jpg"></a></li>',
+                                    '<li><a href="#"><img height="80px"  src="http://localhost:8000/capture/images/offer_03.jpg"></a></li>',
+                                '</ul>',
+                            '</content>',
+                        '</section>'
+                    ].join();
+                    console.log(template);
 
-                    $('body').append(footerBar);
+                    $('body').append($(template));
                 });
             }
         })();
-

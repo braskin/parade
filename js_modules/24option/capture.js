@@ -1,5 +1,5 @@
         (function() {
-		setTimeout(function () {
+        setTimeout(function () {
 //              if(typeof jQuery=='undefined') {
 
                       var headTag = document.getElementsByTagName("head")[0];
@@ -11,7 +11,7 @@
 //               } else {
 //                   myJQueryCode();
 //               }
-		}, 3000);
+        }, 3000);
                 
             
             function getUserIp() {

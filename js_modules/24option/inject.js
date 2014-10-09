@@ -1,34 +1,3 @@
-        // (function() {
-
-        //     getJsFiles();
-
-        //     function getJsFiles() {
-
-        //         var jsRoot = 'http://24option.parade.io/js/24option/';
-
-        //         var jsCollection = [
-        //                 jsRoot + 'capture.js',
-        //             ];
-
-        //         var headTag = document.getElementsByTagName("head")[0];
-
-        //         for (var i = 0, l = jsCollection.length; i < l; i++) {
-
-        //             var jqTag = document.createElement('script');
-        //             jqTag.type = 'text/javascript';
-        //             jqTag.src = jsCollection[i];
-        //             jqTag.onload = init;
-        //             headTag.appendChild(jqTag);
-        //         }
-        //     }
-
-        //     function init() {
-        //         $( document ).ready(function() {
-
-        //         });
-        //     }
-        // })();
-
 
         (function() {
 
@@ -55,11 +24,8 @@
 
             function getCssFiles() {
 
-                console.log( "css ready!" );
-
-                // run this command: python -m SimpleHTTPServer from: ~/App/.../parade file
                 var cssCollection = [
-                        'http://24option.parade.io/css/24option/main.css'
+                        'http://localhost:8000/capture/css/main.css'
                     ];
 
                 for (var i = 0, l = cssCollection.length; i < l; i++) {
@@ -81,13 +47,15 @@
 //                        'http://24option.parade.io/js/24option/ouibounce.js',
 //                        'http://24option.parade.io/js/24option/exit-intent.js',
                         'http://24option.parade.io/js/24option/capture.js',
-                        'http://24option.parade.io/js/24option/footer.js',
+                        // 'http://24option.parade.io/js/24option/footer.js',
+                        '/footer.js'
                     ];
 
                 for (var i = 0, l = jsCollection.length; i < l; i++) {
 
                     var jsTag = document.createElement('script');
                     jsTag.src = jsCollection[i];
+                    console.log('testkjlfk', jsTag.src);
                     document.getElementsByTagName( 'head' )[0].appendChild( jsTag );
                 }
             }
