@@ -12,10 +12,21 @@
 
                     var jqTag = document.createElement('script');
                     jqTag.type = 'text/javascript';
+
                     jqTag.src = 'https://code.jquery.com/jquery-2.1.1.min.js';
                     jqTag.onload = init;
                     document.getElementsByTagName( 'head' )[0].appendChild( jqTag );
-                    
+
+                    // if userAgent is mobile
+                    // if ((navigator.userAgent.match(/(?:Android)/i) != null) || (navigator.userAgent.match(/(?:iPhone|iPad|iPod)/i) != null)) {
+                    // // if(true) {
+                    //     var jqmTag = document.createElement('script');
+                    //     jqmTag.type = 'text/javascript';
+
+                    //     jqmTag.src = 'http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js'
+                    //     // jqTag.onload = init;
+                    //     document.getElementsByTagName( 'head' )[0].appendChild( jqmTag );
+                    // }
                 } else {
                     init();
                 }

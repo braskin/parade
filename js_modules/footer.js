@@ -11,7 +11,6 @@
                             isAndroid: (navigator.userAgent.match(/(?:Android)/i) != null),
                             isChromeIos: (navigator.userAgent.match(/(?:CriOS)/i) != null),
                             isNativeAppPage: (window.location.search.match(/(?:mobile_app_web=true)/i) != null),
-                            isMobile: false,
                             isLandscape: false,
                         },
 
@@ -22,6 +21,7 @@
                 },
 
                 global: {
+                    isMobile: false,
                     clickEventType: false
                 },
 
@@ -30,7 +30,16 @@
                     var that = this;
 
                     that.setGlobals();
-                    that.compileFooter();
+
+                    if (that.global.isMobile) {
+
+                        that.compileMobileFooter();
+                        that.showMobileFooter();
+                    } else {
+
+                        that.compileFooter();
+                        that.showFooter();
+                    }
                     that.initEvents();
 
                 },
@@ -41,28 +50,15 @@
                         m    = that.models;
 
                     m.browser.mobile.isIos7    = (m.browser.mobile.isIos) && (navigator.appVersion.indexOf('7_') != -1);
-                    m.browser.mobile.isMobile  = (m.browser.mobile.isIos) || (m.browser.mobile.isAndroid);
-                    that.global.clickEventType = ((FooterBanner.models.browser.isMobile) ? 'touchstart' : 'click');
+                    that.global.isMobile       = (m.browser.mobile.isIos) || (m.browser.mobile.isAndroid);
+                    that.global.clickEventType = ((that.global.isMobile) ? 'touchstart' : 'click');
+                    that.global.clickEventType = ((that.global.isMobile) ? 'touchstart' : 'click');
                 },
 
                 initEvents: function() {
 
                     var that = this,
-                        $container  = $('.parade-footer-promotion');
-
-
-                    $(window).on("scroll", function() {
-                        var scrollHeight = $(document).height();
-                        var scrollPosition = $(window).height() + $(window).scrollTop();
-                        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-
-                            setTimeout(function() {
-                                $container.css('bottom', 0);
-
-                            }, 2000);
-
-                        }
-                    });
+                        $container  = $('.js-parade-footer-promo');
 
                     $('.js-parade-btn-close').on(FooterBanner.global.clickEventType, function(e) {
 
@@ -72,10 +68,47 @@
                     });
                 },
 
+                showMobileFooter: function(e) {
+
+                    window.document.addEventListener('scroll', function(e) {
+
+                        var scrollHeight   = $(document).height(),
+                            scrollPosition = $(window).height() + $(window).scrollTop(),
+                            $container     = $('.js-parade-footer-promo');
+
+                        if ((scrollHeight - scrollPosition) / scrollHeight < 0) {
+
+                            setTimeout(function() {
+                                $container.css('bottom', 0);
+
+                            }, 2000);
+
+                        }
+                    }, false);
+                },
+
+                showFooter: function() {
+
+                    $(document).on('scroll', function(e) {
+                        var scrollHeight   = $(document).height(),
+                            scrollPosition = $(window).height() + $(window).scrollTop(),
+                            $container     = $('.js-parade-footer-promo');
+
+                        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+
+                            setTimeout(function() {
+                                $container.css('bottom', 0);
+
+                            }, 2000);
+
+                        }
+                    });
+                },
+
                 compileFooter: function() {
 
                     var template = [
-                        '<section class="parade-footer-promotion">',
+                        '<section class="parade-footer-promo js-parade-footer-promo">',
                             '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                             '<div class="parade-content">',
                                 '<p class="parade-message">Check out these other great offer!</p>',
@@ -84,13 +117,28 @@
                                     '<li><a href="#"><img height="80px" src="http://localhost:8000/capture/images/offer_02.jpg"></a></li>',
                                     '<li><a href="#"><img height="80px"  src="http://localhost:8000/capture/images/offer_03.jpg"></a></li>',
                                 '</ul>',
+                            '</div>',
+                        '</section>'
+                    ].join('\n');
+
+                    $(document.body).append($(template));
+                },
+
+                compileMobileFooter: function() {
+
+                    var template = [
+                        '<section class="parade-mobile-footer-promo js-parade-footer-promo">',
+                            '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
+                            '<div class="parade-content">',
+                                '<span class="parade-message">YOU CAN <em>MAKE</em></span>',
+                                '<span class="parade-message-bold">80%</span>',
+                                '<span class="parade-message"><em>PROFIT</em> IN MINUTES</span>',
                             '</content>',
                         '</section>'
                     ].join('\n');
 
-                    $('body').append($(template));
+                    $(document.body).append($(template));
                 }
-
 
             }
 
