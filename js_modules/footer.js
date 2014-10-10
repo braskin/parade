@@ -130,9 +130,9 @@
                         '<section class="parade-mobile-footer-promo js-parade-footer-promo">',
                             '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                             '<div class="parade-content">',
-                                '<span class="parade-message">YOU CAN <em>MAKE</em></span>',
+                                '<span class="parade-message">YOU CAN<br><em>MAKE</em></span>',
                                 '<span class="parade-message-bold">80%</span>',
-                                '<span class="parade-message"><em>PROFIT</em> IN MINUTES</span>',
+                                '<span class="parade-message"><em>PROFIT</em><br>IN MINUTES</span>',
                             '</content>',
                         '</section>'
                     ].join('\n');
