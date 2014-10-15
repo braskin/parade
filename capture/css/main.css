@@ -40,14 +40,15 @@
 
 .parade-footer-promo {
     position: fixed;
-    z-index: 1;
+    z-index: 1000000;
     right: 0;
     bottom: -3000px;
     left: 0;
     height: 100px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #238ee8;
+    opacity: 0.8;
     font-family: 'MyriadPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #000;
+    color: #ffff33;
     text-align: center;
 
     -webkit-transition: all 1s ease;
@@ -76,7 +77,7 @@
 
 .parade-footer-promo .parade-content {
     position: relative;
-    width: 790px;
+    width: 792px;
     margin: 10px auto;
 }
 
