@@ -44,12 +44,11 @@
     right: 0;
     bottom: -3000px;
     left: 0;
-    height: 100px;
-    background-color: #238ee8;
-    opacity: 0.8;
-    font-family: 'MyriadPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #ffff33;
+    min-width: 800px;
     text-align: center;
+    background-color: #499BEA, #238EE8;
+    background-image: linear-gradient(#539EDF, #238EE8);
+    opacity: 0.8;
 
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -59,9 +58,9 @@
 
 .parade-footer-promo .parade-btn-close {
     position: absolute;
-    z-index: 1;
+    z-index: 1000000;
     top: 10px;
-    right: 15px;
+    left: 15px;
     width: 20px;
     height: 20px;
     color: #fff;
@@ -77,26 +76,73 @@
 
 .parade-footer-promo .parade-content {
     position: relative;
-    width: 792px;
+    display: inline-block;
     margin: 10px auto;
+    text-align: left;
+    font-family: 'MyriadPro';
+    color: #ffff33;
 }
 
-.parade-footer-promo .parade-content p {
+.parade-footer-promo .parade-content span {
     float: left;
-    font-size: 26px;
-    width: 200px;
+    font-size: 40px;
+    line-height: 43px;
 }
 
 .parade-footer-promo .parade-content ul {
+    float: right;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-align: center;
 }
 
 .parade-footer-promo .parade-content li {
-    display: inline;
+    position: relative;
+    display: inline-block;
     margin-left: 20px;
+    padding: 2px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
+.parade-footer-promo .parade-content li:hover {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.parade-footer-promo .parade-content li:hover img {
+    opacity: 0.5;
+}
+
+.parade-footer-promo .parade-content a {
+    display: inline-blocks;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
+.parade-footer-promo .parade-content li span {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #333;
+    font-size: 26px;
+}
+
+
+.parade-footer-promo .parade-content li:hover span {
+    display: inline;
 }
 
 .parade-mobile-footer-promo {

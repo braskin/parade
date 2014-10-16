@@ -111,11 +111,11 @@
                         '<section class="parade-footer-promo js-parade-footer-promo">',
                             '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                             '<div class="parade-content">',
-                                '<p class="parade-message">Check out these other great offer!</p>',
+                                '<span class="parade-message">Check out these<br>other great offer!</span>',
                                 '<ul>',
-                                    '<li><a href="#"><img height="80px" src="http://localhost:8000/capture/images/offer_01.jpg"></a></li>',
-                                    '<li><a href="#"><img height="80px" src="http://localhost:8000/capture/images/offer_02.jpg"></a></li>',
-                                    '<li><a href="#"><img height="80px"  src="http://localhost:8000/capture/images/offer_03.jpg"></a></li>',
+                                    '<li><a href="#"><img src="http://localhost:8000/capture/images/offer_01.jpg" height="80px"></a><span>A new offer</span></li>',
+                                    '<li><a href="#"><img src="http://localhost:8000/capture/images/offer_02.jpg" height="80px"></a></li>',
+                                    '<li><a href="#"><img src="http://localhost:8000/capture/images/offer_03.jpg" height="80px"></a></li>',
                                 '</ul>',
                             '</div>',
                         '</section>'
@@ -149,6 +149,8 @@
                     console.log( "footer ready!" );
 
                     FooterBanner.init();
+                    // var $container = $('.js-parade-footer-promo');
+                    // $container.css('bottom', 0);
                 });
             }
         })();
