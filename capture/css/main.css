@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'MyriadPro';
-    src: url("fonts/MyriadPro.otf") format("opentype");
+    font-family: 'Roboto';
+    src: url("fonts/roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 #myDiv {
@@ -46,9 +46,7 @@
     left: 0;
     min-width: 800px;
     text-align: center;
-    background-color: #499BEA, #238EE8;
     background-image: linear-gradient(#539EDF, #238EE8);
-    opacity: 0.8;
 
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -66,12 +64,7 @@
     color: #fff;
     font-size: 14px;
     text-decoration: none;
-    background-color: #333;
     cursor: pointer;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
 }
 
 .parade-footer-promo .parade-content {
@@ -79,7 +72,7 @@
     display: inline-block;
     margin: 10px auto;
     text-align: left;
-    font-family: 'MyriadPro';
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #ffff33;
 }
 
@@ -154,7 +147,7 @@
     padding-left: 10px;
     background-color: rgba(255, 255, 255, 0.3);
     color: #000;
-    font-family: 'MyriadPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-align: center;
 
     -webkit-transition: all 1s ease;

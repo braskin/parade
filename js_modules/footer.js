@@ -113,9 +113,9 @@
                             '<div class="parade-content">',
                                 '<span class="parade-message">Check out these<br>other great offer!</span>',
                                 '<ul>',
-                                    '<li><a href="#"><img src="http://localhost:8000/capture/images/offer_01.jpg" height="80px"></a><span>A new offer</span></li>',
-                                    '<li><a href="#"><img src="http://localhost:8000/capture/images/offer_02.jpg" height="80px"></a></li>',
-                                    '<li><a href="#"><img src="http://localhost:8000/capture/images/offer_03.jpg" height="80px"></a></li>',
+                                    '<li><a href="http://www.anyoption.com/"><img src="http://localhost:8000/capture/images/offer_01.jpg" height="80px"></a></li>',
+                                    '<li><a href="http://www.eztrader.com/"><img src="http://localhost:8000/capture/images/offer_02.jpg" height="80px"></a></li>',
+                                    '<li><a href="http://www.bancdebinary.com/"><img src="http://localhost:8000/capture/images/offer_03.jpg" height="80px"></a></li>',
                                 '</ul>',
                             '</div>',
                         '</section>'
@@ -149,8 +149,8 @@
                     console.log( "footer ready!" );
 
                     FooterBanner.init();
-                    var $container = $('.js-parade-footer-promo');
-                    $container.css('bottom', 0);
+                    // var $container = $('.js-parade-footer-promo');
+                    // $container.css('bottom', 0);
                 });
             }
         })();
