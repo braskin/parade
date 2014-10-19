@@ -133,7 +133,7 @@
                                 '<span class="parade-message">YOU CAN<br><em>MAKE</em></span>',
                                 '<span class="parade-message-bold">80%</span>',
                                 '<span class="parade-message"><em>PROFIT</em><br>IN MINUTES</span>',
-                            '</content>',
+                            '</div>',
                         '</section>'
                     ].join('\n');
 
@@ -149,8 +149,8 @@
                     console.log( "footer ready!" );
 
                     FooterBanner.init();
-                    // var $container = $('.js-parade-footer-promo');
-                    // $container.css('bottom', 0);
+                    var $container = $('.js-parade-footer-promo');
+                    $container.css('bottom', 0);
                 });
             }
         })();

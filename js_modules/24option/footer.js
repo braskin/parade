@@ -25,7 +25,7 @@
                                     '<li><a href="#"><img height="80px" src="http://localhost:8000/capture/images/offer_02.jpg"></a></li>',
                                     '<li><a href="#"><img height="80px"  src="http://localhost:8000/capture/images/offer_03.jpg"></a></li>',
                                 '</ul>',
-                            '</content>',
+                            '</div>',
                         '</section>'
                     ].join();
                     console.log(template);
