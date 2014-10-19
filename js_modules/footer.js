@@ -111,7 +111,7 @@
                         '<section class="parade-footer-promo js-parade-footer-promo">',
                             '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                             '<div class="parade-content">',
-                                '<span class="parade-message">Check out these<br>other great offer!</span>',
+                                '<span class="parade-message">Check out these<br>other great offers!</span>',
                                 '<ul>',
                                     '<li><a href="http://www.anyoption.com/"><img src="http://localhost:8000/capture/images/offer_01.jpg" height="80px"></a></li>',
                                     '<li><a href="http://www.eztrader.com/"><img src="http://localhost:8000/capture/images/offer_02.jpg" height="80px"></a></li>',
