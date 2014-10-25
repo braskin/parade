@@ -57,9 +57,9 @@
                 var jsCollection = [
 //                        'http://24option.parade.io/js/24option/ouibounce.js',
 //                        'http://24option.parade.io/js/24option/exit-intent.js',
-                        'http://24option.parade.io/js/24option/capture.js',
+                        // 'http://24option.parade.io/js/24option/capture.js',
                         // 'http://24option.parade.io/js/24option/footer.js',
-                        'http://localhost:8000/js_modules/footer.js'
+                        'http://localhost:8000/js_modules/24option/footer.js'
                     ];
 
                 for (var i = 0, l = jsCollection.length; i < l; i++) {
