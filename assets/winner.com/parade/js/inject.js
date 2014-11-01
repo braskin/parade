@@ -36,7 +36,7 @@
             function getCssFiles() {
 
                 var cssCollection = [
-			'/parade/css/main-winner.css'
+                        '/parade/css/main.css'
                     ];
 
                 for (var i = 0, l = cssCollection.length; i < l; i++) {
@@ -55,10 +55,9 @@
 
                 // run this command: python -m SimpleHTTPServer from: ~/App/.../parade file
                 var jsCollection = [
-//                        'http://24option.parade.io/js/24option/ouibounce.js',
-//                        'http://24option.parade.io/js/24option/exit-intent.js',
+                        '/parade/js/ouibounce.js',
+                        '/parade/js/exit-intent.js',
                         '/parade/js/capture.js',
-                        // 'http://24option.parade.io/js/24option/footer.js',
                         '/parade/js/footer.js'
                     ];
 
@@ -77,4 +76,3 @@
                 });
             }
         })();
-

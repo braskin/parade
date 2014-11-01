@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyriadPro';
-    src: url("../../fonts/MyriadPro.otf") format("opentype");
+    src: url("/parade/css/fonts/roboto/Roboto-Medium.ttf") format("opentype");
 }
 
 #myDiv {
