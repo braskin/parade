@@ -94,7 +94,8 @@
                             scrollPosition = $(window).height() + $(window).scrollTop(),
                             $container     = $('.js-parade-footer-promo');
 
-                        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+                        // if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+                        if (scrollHeight > scrollPosition) {
 
                             setTimeout(function() {
                                 $container.css('bottom', 0);
