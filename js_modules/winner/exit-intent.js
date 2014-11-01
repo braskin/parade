@@ -7,9 +7,9 @@ $( document ).ready(function() {
         var template = [
             '<section id="myDiv" class="parade-bonus-banner js-parade-bonus-banner">',
                 '<header>',
-                    '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
+                    // '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                     '<a href="#"><img src="http://localhost:8000/capture/images/winner-logo.png"></a>',
-                    '<a href="#"><img src="http://localhost:8000/capture/images/ad.gif"></a>',
+                    // '<a href="#"><img src="http://localhost:8000/capture/images/ad.gif"></a>',
                 '</header>',
                 '<div class="parade-bonus-content">',
                     '<div class="parade-message">This weeks\'s #1 online Casino for highest payouts!</div>',

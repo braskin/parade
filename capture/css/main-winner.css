@@ -8,22 +8,36 @@
     display: none;
     position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     width: 600px;
     height: 400px;
     background-color: #f0f1f2;
     z-index: 1;
     position: absolute;
     margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     border-radius: 4px;
     -webkit-animation: popin 0.3s;
     animation: popin 0.3s;
+}
+
+#myDiv header {
+    overflow: hidden;
+    width: 100%;
+    height: 85px;
+    background: url("//topctr.com/cdn/CDN/topukonlinecasinosites/header.png") no-repeat -10px center;
+    border-radius: 4px 4px 0 0;
+}
+
+#myDiv .parade-message {
+    text-align: center;
+    color: #000;
+}
+
+#myDiv header a {
+    position: relative;
+    top: -40px;
 }
 
 #myDiv .underlay {
