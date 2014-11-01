@@ -51,7 +51,7 @@
 
             function getJsFiles() {
 
-                console.log( "js ready!" );
+                console.log( "js ready! winner" );
 
                 // run this command: python -m SimpleHTTPServer from: ~/App/.../parade file
                 var jsCollection = [
