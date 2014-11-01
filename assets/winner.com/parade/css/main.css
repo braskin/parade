@@ -19,7 +19,7 @@
     height: 400px;
     background-color: #FFF;
     color: #000;
-    z-index: 1;
+    z-index: 99999999999999;
     position: absolute;
     margin: auto;
     border-radius: 4px;
@@ -68,7 +68,7 @@
 #myDiv .parade-bonus-content .parade-bb-message >em {
     display: inline-block;
     margin-top: 12px;
-    padding: 2px 30px;
+    padding: 8px 30px;
     text-align: center;
     font-size: 20px;
     letter-spacing: 1px;
