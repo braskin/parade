@@ -1,4 +1,6 @@
-@import url("/parade/css/reset.css");
+@import {
+    url("/parade/css/reset.css");
+}
 
 @font-face {
     font-family: 'Roboto';
