@@ -7,17 +7,16 @@ $( document ).ready(function() {
         var template = [
             '<section id="myDiv" class="parade-bonus-banner js-parade-bonus-banner">',
                 '<header>',
-                    '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
+                    // '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                     '<a href="#"><img src="/parade/images/winner-logo.png"></a>',
                     '<a href="#"><img src="/parade/images/ad.gif"></a>',
                 '</header>',
                 '<div class="parade-bonus-content">',
-                    '<div class="parade-message">This weeks\'s #1 online Casino for highest payouts!</div>',
-                    '<div class="parade-message">Do you want a guaranteed?</div>',
-                    '<div class="parade-message">FREE 500% Bonus</div>',
-                    '<div class="parade-message">When YOU make a deposit?</div>',
-                    '<a href="#" class="parade-message"><en>YES</em> I TAKE WINNING SERIOSLY</a>',
-                    '<a href="#" class="parade-message"><en>NO</em> FREE CASH IS NOT FOR ME</a>',
+                    '<small>This weeks\'s #1 online Casino for highest payouts!</small>',
+                    '<div class="parade-bb-message"><em class="green">Do you want a guaranteed</em></div>',
+                    '<div class="parade-bb-title cf"><em>FREE 500% Bonus</em></br>When YOU make a deposit<b>?</b></div>',
+                    '<div class="parade-bb-btn-wrapper"><a href="#" class="parade-bb-btn green"><em>YES</em> I TAKE WINNING SERIOSLY</a>',
+                    '<a href="#" class="parade-bb-btn grey"><em>NO</em> FREE CASH IS NOT FOR ME</a></div>',
                 '</content>',
             '</section>'
         ].join('\n');
@@ -42,7 +41,7 @@ $( document ).ready(function() {
         // $('#myDiv').hide();
         // });
 
-        $('#myDiv .btn-close').on('click', function() {
+        $('#myDiv .parade-bb-btn.grey').on('click', function() {
         $('#myDiv').hide();
         });
 
