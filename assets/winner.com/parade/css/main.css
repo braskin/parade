@@ -8,6 +8,7 @@
 }
 
 #myDiv {
+    z-index: 99999999999999;
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: none;
     position: fixed;
