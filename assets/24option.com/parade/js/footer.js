@@ -129,6 +129,7 @@
 
                     var template = [
                         '<section class="parade-mobile-footer-promo js-parade-footer-promo">',
+                            '<a href="#" class="parade-btn-close js-parade-btn-close">&#x2715;</a>',
                             '<img src="/parade/images/anyoption_320x50_80_mobile.gif" height">' +
                         '</section>'
                     ].join('\n');

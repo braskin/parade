@@ -156,3 +156,21 @@
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+
+.parade-mobile-footer-promo .parade-btn-close {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #333;
+    cursor: pointer;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
