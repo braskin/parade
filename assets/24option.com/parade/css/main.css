@@ -148,47 +148,11 @@
     right: 0;
     bottom: -3000px;
     left: 0;
-    padding-left: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #000;
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #022034;
     text-align: center;
 
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-}
-
-.parade-mobile-footer-promo .parade-btn-close {
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 8px;
-    width: 20px;
-    height: 20px;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    background-color: #333;
-    cursor: pointer;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.parade-mobile-footer-promo .parade-message {
-    display: inline-block;
-    color: #fff;
-    font-size: 14px;
-}
-
-.parade-mobile-footer-promo .parade-message em {
-    font-size: 22px;
-}
-.parade-mobile-footer-promo .parade-message-bold {
-    color: #FDD60A;
-    font-size: 50px;
-    letter-spacing: 0;
 }
